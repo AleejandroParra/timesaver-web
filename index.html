@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Agencia de automatización n8n e IA en Argentina. Diseñamos flujos inteligentes, agentes de IA y sistemas de integración para que tu empresa escale sin contratar."/>
+  <title>Time Saver | Agencia de Automatización n8n + IA — Argentina</title>
+  <meta property="og:title" content="Time Saver | Agencia de Automatización n8n + IA — Argentina"/>
+  <meta property="og:description" content="Automatizá tu operación con n8n, agentes de IA y APIs. Diagnóstico gratuito en 48 hs."/>
+  <meta property="og:type" content="website"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Time Saver<sup>™</sup></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+      <li><a href="#process" class="nav-link" data-i18n="nav.process">Process</a></li>
+      <li><a href="#team" class="nav-link" data-i18n="nav.team">Team</a></li>
+      <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
+      <a href="https://wa.me/5491148706906" class="nav-cta" target="_blank" data-i18n="nav.cta">Free consult →</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+  <a href="#process" class="mobile-link" data-i18n="nav.process">Process</a>
+  <a href="#team" class="mobile-link" data-i18n="nav.team">Team</a>
+  <a href="#faq" class="mobile-link" data-i18n="nav.faq">FAQ</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="pt">PT</button>
+  </div>
+  <a href="https://wa.me/5491148706906" class="mobile-cta" target="_blank" data-i18n="nav.cta">Free consult →</a>
+</div>
+
+<section class="hero" id="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-inner">
+    <div class="hero-left hero-animate">
+      <div class="hero-eyebrow" data-i18n="hero.eyebrow">Automation · AI · Development</div>
+      <h1 class="hero-title">
+        <span data-i18n="hero.title1">Your business</span><br>
+        <span class="hero-accent" data-i18n="hero.title2">should run itself</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">We design automated systems that eliminate repetitive tasks, connect your tools, and scale your operation without adding headcount.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5491148706906" class="btn-primary" target="_blank" data-i18n="hero.cta1">Get a free consultation</a>
+        <a href="#services" class="btn-ghost" data-i18n="hero.cta2">See what we automate →</a>
+      </div>
+      <div class="hero-trust">
+        <span data-i18n="hero.t1">✔ Diagnosis in 48h</span>
+        <span data-i18n="hero.t2">✔ Fixed price</span>
+        <span data-i18n="hero.t3">✔ No hidden fees</span>
+      </div>
+    </div>
+    <div class="hero-right hero-widget-animate">
+      <div class="hero-flow">
+        <div class="hf-bar">
+          <div class="hf-dots">
+            <span class="hf-dot" style="background:#ff5f57"></span>
+            <span class="hf-dot" style="background:#febc2e"></span>
+            <span class="hf-dot" style="background:#28c840"></span>
+          </div>
+          <span class="hf-filename">lead-automation.flow</span>
+          <div class="hf-badge"><span class="hf-pulse-dot"></span><span data-i18n="flow.running">Activo</span></div>
+        </div>
+        <div class="hf-canvas">
+          <div class="hf-node hf-trigger">
+            <span class="hf-icon">🌐</span>
+            <div class="hf-node-body">
+              <span class="hf-ntype">Webhook</span>
+              <span class="hf-nname" data-i18n="flow.n1name">Nuevo lead recibido</span>
+            </div>
+          </div>
+          <div class="hf-conn">
+            <div class="hf-conn-v"></div>
+            <span class="hf-conn-chip">n8n</span>
+            <div class="hf-conn-v"></div>
+          </div>
+          <div class="hf-node hf-ai">
+            <span class="hf-icon">⚡</span>
+            <div class="hf-node-body">
+              <span class="hf-ntype">OpenAI GPT-4o</span>
+              <span class="hf-nname" data-i18n="flow.n2name">Califica e interpreta</span>
+            </div>
+          </div>
+          <div class="hf-fork">
+            <div class="hf-fork-v"></div>
+            <div class="hf-fork-h"></div>
+          </div>
+          <div class="hf-outputs">
+            <div class="hf-node hf-out">
+              <span class="hf-icon">💬</span>
+              <div class="hf-node-body">
+                <span class="hf-ntype">WhatsApp API</span>
+                <span class="hf-nname" data-i18n="flow.n3name">Alerta a ventas</span>
+              </div>
+            </div>
+            <div class="hf-node hf-out">
+              <span class="hf-icon">📊</span>
+              <div class="hf-node-body">
+                <span class="hf-ntype">HubSpot CRM</span>
+                <span class="hf-nname" data-i18n="flow.n4name">Registra contacto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hf-footer">
+          <span class="hf-pulse-green"></span>
+          <span data-i18n="flow.status">Última ejecución: hace 2 min · 312ms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item"><span class="stat-num" data-count="3">0</span><span class="stat-sfx">+</span><span class="stat-lbl" data-i18n="s.y">Years automating</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-item"><span class="stat-num" data-count="100">0</span><span class="stat-sfx">%</span><span class="stat-lbl" data-i18n="s.r">Measurable results</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-item"><span class="stat-num" data-count="48">0</span><span class="stat-sfx">h</span><span class="stat-lbl" data-i18n="s.d">Free diagnosis</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-item"><span class="stat-num">∞</span><span class="stat-lbl" data-i18n="s.s">Scale without hiring</span></div>
+  </div>
+</div>
+
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="b.tag">Why automate</span>
+      <h2 class="section-title" data-i18n="b.title">Every day without automation<br>is time and money lost</h2>
+    </div>
+    <div class="grid-3">
+      <div class="benefit-card reveal-up"><div class="card-icon">⏱</div><h3 data-i18n="b.c1t">Recover hours every day</h3><p data-i18n="b.c1p">Answering queries, loading orders, generating reports — all this runs on its own. Your team focuses on what matters.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon">🔄</div><h3 data-i18n="b.c2t">Fewer errors, more order</h3><p data-i18n="b.c2p">Information flows between your systems without human intervention. No duplicated data, no forgetting.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon">📈</div><h3 data-i18n="b.c3t">More sales, less effort</h3><p data-i18n="b.c3p">Every lead gets classified, registered and followed up automatically. Convert more without growing fixed costs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="sv.tag">What we build</span>
+      <h2 class="section-title" data-i18n="sv.title">Solutions already working<br>in companies like yours</h2>
+    </div>
+    <div class="grid-2">
+      <div class="service-card reveal-up">
+        <span class="svc-num">01</span><div class="card-icon-lg">⚙️</div>
+        <h3 data-i18n="sv.s1t">Process Automation</h3>
+        <p data-i18n="sv.s1d">We connect your tools and eliminate manual work using n8n and APIs.</p>
+        <ul class="check-list">
+          <li data-i18n="sv.s1l1">Flows running 24/7 without errors</li>
+          <li data-i18n="sv.s1l2">CRM, invoicing and spreadsheets integrated</li>
+          <li data-i18n="sv.s1l3">Reports that generate themselves</li>
+          <li data-i18n="sv.s1l4">Automatic team notifications</li>
+        </ul>
+      </div>
+      <div class="service-card reveal-up">
+        <span class="svc-num">02</span><div class="card-icon-lg">🤖</div>
+        <h3 data-i18n="sv.s2t">AI Agents</h3>
+        <p data-i18n="sv.s2d">Agents with contextual memory that understand your business and operate autonomously.</p>
+        <ul class="check-list">
+          <li data-i18n="sv.s2l1">WhatsApp, web or internal systems</li>
+          <li data-i18n="sv.s2l2">Memory and context per customer</li>
+          <li data-i18n="sv.s2l3">Scales without additional cost</li>
+          <li data-i18n="sv.s2l4">Learns from every interaction</li>
+        </ul>
+      </div>
+      <div class="service-card reveal-up">
+        <span class="svc-num">03</span><div class="card-icon-lg">💻</div>
+        <h3 data-i18n="sv.s3t">Web Development</h3>
+        <p data-i18n="sv.s3d">Custom websites integrated with your automations from day one.</p>
+        <ul class="check-list">
+          <li data-i18n="sv.s3l1">Landing pages that capture leads</li>
+          <li data-i18n="sv.s3l2">Forms connected to your CRM</li>
+          <li data-i18n="sv.s3l3">Modern, fast and responsive</li>
+          <li data-i18n="sv.s3l4">Clean code, completely yours</li>
+        </ul>
+      </div>
+      <div class="service-card reveal-up">
+        <span class="svc-num">04</span><div class="card-icon-lg">💬</div>
+        <h3 data-i18n="sv.s4t">AI ChatBot</h3>
+        <p data-i18n="sv.s4d">Bots trained with your data that attend and qualify without human intervention.</p>
+        <ul class="check-list">
+          <li data-i18n="sv.s4l1">Available 24/7</li>
+          <li data-i18n="sv.s4l2">Qualifies leads automatically</li>
+          <li data-i18n="sv.s4l3">Responds with real business data</li>
+          <li data-i18n="sv.s4l4">WhatsApp, Instagram or your website</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-cta reveal">
+      <a href="https://wa.me/5491148706906" class="btn-primary" target="_blank" data-i18n="sv.cta">Get a free consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="stack" id="stack">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="st.tag">Stack tecnológico</span>
+      <h2 class="section-title" data-i18n="st.title">Las herramientas que usamos</h2>
+      <p class="stack-sub reveal" data-i18n="st.sub">Especialistas técnicos, no conectores de planillas.</p>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#f24e1e"></div>
+        <div class="stack-info"><span class="stack-name">n8n</span><span class="stack-cat" data-i18n="st.n8n">Motor de automatización</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#10b981"></div>
+        <div class="stack-info"><span class="stack-name">OpenAI GPT-4o</span><span class="stack-cat" data-i18n="st.openai">Modelos de lenguaje</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#25d366"></div>
+        <div class="stack-info"><span class="stack-name">WhatsApp API</span><span class="stack-cat" data-i18n="st.wa">Mensajería automatizada</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#a855f7"></div>
+        <div class="stack-info"><span class="stack-name">Make</span><span class="stack-cat" data-i18n="st.make">Automatización visual</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#ff7a59"></div>
+        <div class="stack-info"><span class="stack-name">HubSpot CRM</span><span class="stack-cat" data-i18n="st.hubspot">Gestión de clientes</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#4285f4"></div>
+        <div class="stack-info"><span class="stack-name">Google Workspace</span><span class="stack-cat" data-i18n="st.google">Hojas e integraciones</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#6366f1"></div>
+        <div class="stack-info"><span class="stack-name">Pinecone</span><span class="stack-cat" data-i18n="st.pinecone">Vector DB para IA</span></div>
+      </div>
+      <div class="stack-card reveal-up">
+        <div class="stack-dot" style="background:#f97316"></div>
+        <div class="stack-info"><span class="stack-name">Anthropic Claude</span><span class="stack-cat" data-i18n="st.claude">IA conversacional</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="p.tag">How we work</span>
+      <h2 class="section-title" data-i18n="p.title">Simple, transparent,<br>results from week one</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step reveal-up"><div class="step-num">01</div><div><h3 data-i18n="p.s1t">Free diagnosis</h3><p data-i18n="p.s1d">We meet or chat on WhatsApp. We detect which processes have the most automation potential. No cost, no commitment.</p></div></div>
+      <div class="process-step reveal-up"><div class="step-num">02</div><div><h3 data-i18n="p.s2t">Custom proposal</h3><p data-i18n="p.s2d">Clear scope, defined timelines and a fixed price with no surprises or hidden costs.</p></div></div>
+      <div class="process-step reveal-up"><div class="step-num">03</div><div><h3 data-i18n="p.s3t">Implementation</h3><p data-i18n="p.s3d">We build and integrate everything without interrupting your operation. Real results from the first week.</p></div></div>
+      <div class="process-step reveal-up"><div class="step-num">04</div><div><h3 data-i18n="p.s4t">Ongoing support</h3><p data-i18n="p.s4d">We monitor the flows, adjust what's needed and scale when your business requires it.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="faq-left reveal">
+        <span class="section-tag" data-i18n="faq.tag">FAQ</span>
+        <h2 class="section-title" data-i18n="faq.title">What people ask<br>before getting started</h2>
+        <a href="https://wa.me/5491148706906" class="btn-ghost" target="_blank" data-i18n="faq.ask">Ask another question →</a>
+      </div>
+      <div class="faq-right">
+        <details class="faq-item reveal-up"><summary data-i18n="faq.q1">What types of processes can you automate?</summary><p data-i18n="faq.a1">Any task your team repeats every day. Answering queries, loading data, sending quotes, generating reports. If it's done manually and repeatedly, it can be automated.</p></details>
+        <details class="faq-item reveal-up"><summary data-i18n="faq.q2">How much does it cost?</summary><p data-i18n="faq.a2">It depends on complexity. We always present a closed quote before starting — no hidden costs, no surprises.</p></details>
+        <details class="faq-item reveal-up"><summary data-i18n="faq.q3">Do we need technical knowledge?</summary><p data-i18n="faq.a3">Not at all. We configure everything to run autonomously. If you prefer we handle everything, that works too.</p></details>
+        <details class="faq-item reveal-up"><summary data-i18n="faq.q4">How long does it take?</summary><p data-i18n="faq.a4">1 to 3 weeks from first contact to first results. The diagnosis is ready within 48 hours.</p></details>
+        <details class="faq-item reveal-up"><summary data-i18n="faq.q5">Do automations scale with the business?</summary><p data-i18n="faq.a5">Yes. We design flexible systems that grow with your company without rebuilding from scratch.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="t.tag">The team</span>
+      <h2 class="section-title" data-i18n="t.title">The people behind Time Saver</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal-up">
+        <img src="images/gonzalovolpegomez.png" alt="Gonzalo Martin Volpe Gómez" class="team-photo">
+        <div class="team-info">
+          <h3 class="team-name">Gonzalo Martin Volpe Gómez</h3>
+          <p class="team-role" data-i18n="t.g.role">Automation & Web Developer</p>
+          <p class="team-bio" data-i18n="t.g.bio">Web developer specialized in AI automation. Builds the systems that make everything work: from the frontend to the automated flows that eliminate manual work.</p>
+          <div class="team-links">
+            <a href="https://www.linkedin.com/in/gonzalo-martin-volpe-gomez/" target="_blank" class="team-link">LinkedIn</a>
+            <a href="https://gonzalomartinvg.com/" target="_blank" class="team-link">Portfolio</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal-up">
+        <img src="images/ale.jpg" alt="Alejandro Parra" class="team-photo">
+        <div class="team-info">
+          <h3 class="team-name">Alejandro Parra</h3>
+          <p class="team-role team-role-2" data-i18n="t.a.role">Data Scientist</p>
+          <p class="team-bio" data-i18n="t.a.bio">Data Scientist with experience at Walmart, Newsan and Banco Santander. Designs automations, system integrations and operational flows with n8n and APIs.</p>
+          <div class="team-links">
+            <a href="https://www.linkedin.com/in/alejandro-d-parra/" target="_blank" class="team-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="cta-orb"></div>
+  <div class="container">
+    <div class="final-cta-inner reveal">
+      <span class="section-tag" data-i18n="cta.tag">Start today</span>
+      <h2 data-i18n="cta.title">Start saving time this week</h2>
+      <p data-i18n="cta.text">The first step is free. Tell us how your operation works and we'll tell you what you can automate first.</p>
+      <a href="https://wa.me/5491148706906" class="btn-primary btn-large" target="_blank" data-i18n="cta.btn">Request free diagnosis</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Time Saver™</span>
+        <p data-i18n="ft.tag">AI automation and web development for companies that want to grow without wasting time.</p>
+      </div>
+      <div class="footer-col">
+        <h6 data-i18n="ft.nav">Navigation</h6>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#team" data-i18n="nav.team">Team</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h6 data-i18n="ft.contact">Contact</h6>
+        <a href="https://wa.me/5491148706906" target="_blank" class="footer-wa" data-i18n="ft.wa">Chat on WhatsApp →</a>
+        <a href="https://www.linkedin.com/in/gonzalo-martin-volpe-gomez/" target="_blank">LinkedIn Gonzalo</a>
+        <a href="https://www.linkedin.com/in/alejandro-d-parra/" target="_blank">LinkedIn Alejandro</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Time Saver.</span>
+      <div class="footer-lang">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/js.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+.agents/
+.claude/
+_backup/
+skills-lock.json
+*.log
