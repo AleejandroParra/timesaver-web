@@ -1,12 +1,14 @@
 const T = {
   en: {
     'nav.services':'Services','nav.process':'Process','nav.team':'Team','nav.faq':'FAQ','nav.cta':'Free diagnosis →',
-    'hero.eyebrow':'n8n Automation Agency · AI Agents · Argentina',
-    'hero.title1':'n8n + AI Automation:','hero.title2':'Scale your operation, not your payroll',
-    'hero.sub':'We design automated systems with n8n and AI that eliminate repetitive tasks, connect your tools, and scale your operation without adding headcount.',
-    'hero.cta1':'Eliminate manual work today','hero.cta2':'See what we automate →',
+    'hero.eyebrow':'Web Sites · AI Automation · Argentina',
+    'hero.title1':'Your business,','hero.title2':'running on its own',
+    'hero.sub':'We build your website and connect it to smart systems that handle customers, send alerts and run your operation — 24 hours a day, automatically.',
+    'hero.cta1':'Get a free consultation','hero.cta2':'See how it works →',
     'hero.t1':'✔ Diagnosis in 48h','hero.t2':'✔ Fixed price','hero.t3':'✔ No hidden fees',
     'flow.running':'Active',
+    'flow.filename':'active-system',
+    'flow.t1':'Your website','flow.t2':'AI Assistant','flow.t4':'Your database',
     'flow.n1name':'New lead received','flow.n2name':'Qualifies & interprets','flow.n3name':'Alerts sales team','flow.n4name':'Registers contact',
     'flow.status':'Last run: 2 min ago · 312ms',
     's.y':'Years automating','s.r':'Measurable results','s.d':'Free diagnosis','s.s':'Scale without hiring',
@@ -43,16 +45,18 @@ const T = {
     't.a.role':'Data Scientist','t.a.bio':'Data Scientist with experience at Walmart, Newsan and Banco Santander. Designs automations, system integrations and operational flows with n8n and APIs.',
     'cta.tag':'Start today','cta.title':'Scale your operation this week',
     'cta.text':'The first step is free. Tell us how your operation works and we\'ll design your first automation architecture.','cta.btn':'Request free diagnosis',
-    'ft.tag':'n8n automation and AI agents for companies that want to scale without hiring.','ft.nav':'Navigation','ft.contact':'Contact','ft.wa':'Chat on WhatsApp →'
+    'ft.tag':'Web + AI automation for companies that want to grow without hiring more staff.','ft.nav':'Navigation','ft.contact':'Contact','ft.wa':'Chat on WhatsApp →'
   },
   es: {
     'nav.services':'Servicios','nav.process':'Proceso','nav.team':'Equipo','nav.faq':'FAQ','nav.cta':'Diagnóstico gratis →',
-    'hero.eyebrow':'Agencia de Automatización n8n · Agentes IA · Argentina',
-    'hero.title1':'Automatización n8n + IA:','hero.title2':'Escalá tu operación, no tu nómina',
-    'hero.sub':'Diseñamos sistemas automáticos con n8n e IA que eliminan tareas repetitivas, conectan tus herramientas y hacen que tu operación escale sin agregar personal.',
-    'hero.cta1':'Eliminá el trabajo manual hoy','hero.cta2':'Ver qué automatizamos →',
+    'hero.eyebrow':'Sitios Web · Automatización IA · Argentina',
+    'hero.title1':'Tu negocio,','hero.title2':'trabajando solo',
+    'hero.sub':'Construimos tu sitio web y lo conectamos con sistemas automáticos que atienden clientes, mandan alertas y mueven tu operación — las 24 horas, sin que tengas que hacer nada.',
+    'hero.cta1':'Consultá gratis por WhatsApp','hero.cta2':'Ver cómo funciona →',
     'hero.t1':'✔ Diagnóstico en 48 hs','hero.t2':'✔ Presupuesto cerrado','hero.t3':'✔ Sin letra chica',
     'flow.running':'Activo',
+    'flow.filename':'sistema-activo',
+    'flow.t1':'Tu sitio web','flow.t2':'Asistente IA','flow.t4':'Tu base de datos',
     'flow.n1name':'Nuevo lead recibido','flow.n2name':'Califica e interpreta','flow.n3name':'Alerta a ventas','flow.n4name':'Registra contacto',
     'flow.status':'Última ejecución: hace 2 min · 312ms',
     's.y':'Años automatizando','s.r':'Resultados medibles','s.d':'Diagnóstico gratuito','s.s':'Escala sin contratar',
@@ -89,16 +93,18 @@ const T = {
     't.a.role':'Data Scientist','t.a.bio':'Data Scientist con experiencia real en Walmart, Newsan y Banco Santander. Diseña e implementa automatizaciones de procesos, integraciones entre sistemas y flujos operativos con n8n y APIs.',
     'cta.tag':'Empezá hoy','cta.title':'Escalá tu operación esta semana',
     'cta.text':'El primer paso es gratis. Contanos cómo funciona tu operación y diseñamos tu primera arquitectura de automatización.','cta.btn':'Solicitar diagnóstico gratuito',
-    'ft.tag':'Automatización n8n y agentes IA para empresas que quieren escalar sin contratar.','ft.nav':'Navegación','ft.contact':'Contacto','ft.wa':'Hablar por WhatsApp →'
+    'ft.tag':'Web + automatización IA para empresas que quieren crecer sin contratar más personal.','ft.nav':'Navegación','ft.contact':'Contacto','ft.wa':'Hablar por WhatsApp →'
   },
   pt: {
     'nav.services':'Serviços','nav.process':'Processo','nav.team':'Equipe','nav.faq':'FAQ','nav.cta':'Diagnóstico grátis →',
-    'hero.eyebrow':'Agência de Automação n8n · Agentes IA · Argentina',
-    'hero.title1':'Automação n8n + IA:','hero.title2':'Escale sua operação, não sua folha',
-    'hero.sub':'Desenvolvemos sistemas automatizados com n8n e IA que eliminam tarefas repetitivas, conectam suas ferramentas e escalam sua operação sem aumentar a equipe.',
-    'hero.cta1':'Elimine o trabalho manual hoje','hero.cta2':'Ver o que automatizamos →',
+    'hero.eyebrow':'Sites Web · Automação IA · Argentina',
+    'hero.title1':'Seu negócio,','hero.title2':'funcionando sozinho',
+    'hero.sub':'Construímos seu site e conectamos com sistemas automáticos que atendem clientes, enviam alertas e movem sua operação — 24 horas por dia, sem que você precise fazer nada.',
+    'hero.cta1':'Consulte grátis pelo WhatsApp','hero.cta2':'Ver como funciona →',
     'hero.t1':'✔ Diagnóstico em 48h','hero.t2':'✔ Preço fechado','hero.t3':'✔ Sem taxas ocultas',
     'flow.running':'Ativo',
+    'flow.filename':'sistema-ativo',
+    'flow.t1':'Seu site','flow.t2':'Assistente IA','flow.t4':'Seu banco de dados',
     'flow.n1name':'Novo lead recebido','flow.n2name':'Qualifica e interpreta','flow.n3name':'Alerta equipe de vendas','flow.n4name':'Registra contato',
     'flow.status':'Última execução: há 2 min · 312ms',
     's.y':'Anos automatizando','s.r':'Resultados mensuráveis','s.d':'Diagnóstico gratuito','s.s':'Escale sem contratar',
@@ -135,7 +141,7 @@ const T = {
     't.a.role':'Cientista de Dados','t.a.bio':'Cientista de dados com experiência na Walmart, Newsan e Banco Santander. Projeta automações de processos e integrações com n8n e APIs.',
     'cta.tag':'Comece hoje','cta.title':'Escale sua operação esta semana',
     'cta.text':'O primeiro passo é gratuito. Conte como funciona sua operação e projetamos sua primeira arquitetura de automação.','cta.btn':'Solicitar diagnóstico gratuito',
-    'ft.tag':'Automação n8n e agentes IA para empresas que querem escalar sem contratar.','ft.nav':'Navegação','ft.contact':'Contato','ft.wa':'Conversar pelo WhatsApp →'
+    'ft.tag':'Web + automação IA para empresas que querem crescer sem contratar mais pessoal.','ft.nav':'Navegação','ft.contact':'Contato','ft.wa':'Conversar pelo WhatsApp →'
   }
 };
 
@@ -151,7 +157,7 @@ function applyLang(l) {
   });
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
   const msg = { en:'Hi%2C%20I%20want%20a%20free%20diagnosis%20about%20automation.', es:'Hola%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20sobre%20automatizaciones.', pt:'Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20gratuito%20sobre%20automa%C3%A7%C3%B5es.' };
-  document.querySelectorAll('a[href*="wa.me"]').forEach(a => { a.href = 'https://wa.me/5491148706906?text=' + msg[l]; });
+  document.querySelectorAll('a[href*="wa.me"]').forEach(a => { a.href = 'https://wa.me/351938852194?text=' + msg[l]; });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
