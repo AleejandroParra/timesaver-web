@@ -241,16 +241,6 @@ section>.container{position:relative;z-index:1}
 .footer-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.78rem;color:var(--muted)}
 .footer-lang{display:flex;gap:2px}
 
-/* STACK */
-.stack{background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.stack-sub{font-size:0.9rem;color:var(--muted);margin-top:8px}
-.stack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.stack-card{display:flex;align-items:center;gap:12px;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:13px 15px;transition:border-color 0.2s,transform 0.2s}
-.stack-card:hover{border-color:rgba(249,115,22,0.25);transform:translateY(-2px)}
-.stack-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.stack-info{display:flex;flex-direction:column;gap:2px;min-width:0}
-.stack-name{font-family:'Sora',sans-serif;font-size:0.84rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.stack-cat{font-size:0.71rem;color:var(--muted)}
 
 /* CHATBOT DEMO */
 .chatbot-demo{padding-top:clamp(20px,3vw,32px)}
@@ -319,7 +309,6 @@ section>.container{position:relative;z-index:1}
   .footer-grid{grid-template-columns:1fr 1fr}
   .footer-brand{grid-column:span 2}
   .stat-div{display:block}
-  .stack-grid{grid-template-columns:repeat(4,1fr)}
 }
 
 /* DESKTOP — 1024px+ */
