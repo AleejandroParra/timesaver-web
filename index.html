@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Metadatos básicos y SEO -->
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Construimos sitios web y los conectamos con automatizaciones inteligentes. Más ventas, menos trabajo manual. Agencia web + IA. Diagnóstico gratuito en 48 hs."/>
@@ -9,14 +10,17 @@
   <meta property="og:description" content="Tu sitio web conectado a sistemas automáticos que trabajan solos. Diagnóstico gratuito en 48 hs."/>
   <meta property="og:type" content="website"/>
   <meta name="robots" content="index, follow"/>
+  <!-- Tipografías: Sora para títulos, DM Sans para cuerpo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Librería de íconos SVG (Lucide) — inicializada al final del body -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
+<!-- NAVEGACIÓN — fija en la parte superior, se oscurece al hacer scroll -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">Time Saver<sup>™</sup></a>
@@ -27,6 +31,7 @@
       <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
     </ul>
     <div class="nav-right">
+      <!-- Selector de idioma: EN / ES / PT — controlado por js/i18n.js -->
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="es">ES</button>
@@ -34,12 +39,14 @@
       </div>
       <a href="https://wa.me/351938852194" class="nav-cta" target="_blank" data-i18n="nav.cta">Free consult →</a>
     </div>
+    <!-- Botón hamburguesa — solo visible en mobile -->
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
+<!-- MENÚ MOBILE — se despliega al tocar el hamburguesa -->
 <div class="mobile-menu" id="mobile-menu">
   <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
   <a href="#process" class="mobile-link" data-i18n="nav.process">Process</a>
@@ -53,10 +60,13 @@
   <a href="https://wa.me/351938852194" class="mobile-cta" target="_blank" data-i18n="nav.cta">Free consult →</a>
 </div>
 
+<!-- HERO — sección principal con propuesta de valor y widget de flujo animado -->
 <section class="hero" id="hero">
+  <!-- Orbes decorativos de fondo -->
   <div class="hero-orb hero-orb-1"></div>
   <div class="hero-orb hero-orb-2"></div>
   <div class="hero-inner">
+    <!-- Columna izquierda: texto, CTAs y social proof -->
     <div class="hero-left hero-animate">
       <div class="hero-eyebrow" data-i18n="hero.eyebrow">Automation · AI · Development</div>
       <h1 class="hero-title">
@@ -68,14 +78,17 @@
         <a href="https://wa.me/351938852194" class="btn-primary" target="_blank" data-i18n="hero.cta1">Get a free consultation</a>
         <a href="#services" class="btn-ghost" data-i18n="hero.cta2">See what we automate →</a>
       </div>
+      <!-- Indicadores de confianza -->
       <div class="hero-trust">
         <span data-i18n="hero.t1">✔ Diagnosis in 48h</span>
         <span data-i18n="hero.t2">✔ Fixed price</span>
         <span data-i18n="hero.t3">✔ No hidden fees</span>
       </div>
     </div>
+    <!-- Columna derecha: widget que simula un flujo de automatización en tiempo real -->
     <div class="hero-right hero-widget-animate">
       <div class="hero-flow">
+        <!-- Barra superior estilo editor de código -->
         <div class="hf-bar">
           <div class="hf-dots">
             <span class="hf-dot" style="background:#ff5f57"></span>
@@ -85,6 +98,7 @@
           <span class="hf-filename" data-i18n="flow.filename">sistema-activo</span>
           <div class="hf-badge"><span class="hf-pulse-dot"></span><span data-i18n="flow.running">Activo</span></div>
         </div>
+        <!-- Nodos del flujo: trigger → IA → dos salidas (WhatsApp + base de datos) -->
         <div class="hf-canvas">
           <div class="hf-node hf-trigger">
             <span class="hf-icon"><i data-lucide="globe"></i></span>
@@ -105,6 +119,7 @@
               <span class="hf-nname" data-i18n="flow.n2name">Califica e interpreta</span>
             </div>
           </div>
+          <!-- Bifurcación hacia dos salidas simultáneas -->
           <div class="hf-fork">
             <div class="hf-fork-v"></div>
             <div class="hf-fork-h"></div>
@@ -126,6 +141,7 @@
             </div>
           </div>
         </div>
+        <!-- Pie del widget con estado de última ejecución -->
         <div class="hf-footer">
           <span class="hf-pulse-green"></span>
           <span data-i18n="flow.status">Última ejecución: hace 2 min · 312ms</span>
@@ -135,6 +151,7 @@
   </div>
 </section>
 
+<!-- STATS — franja de métricas con animación de contador al entrar en pantalla -->
 <div class="stats-strip">
   <div class="stats-inner">
     <div class="stat-item"><div class="stat-top"><span class="stat-num" data-count="3">0</span><span class="stat-sfx">+</span></div><span class="stat-lbl" data-i18n="s.y">Years automating</span></div>
@@ -147,6 +164,7 @@
   </div>
 </div>
 
+<!-- BENEFICIOS — 3 tarjetas con los principales argumentos para automatizar -->
 <section class="benefits" id="benefits">
   <div class="container">
     <div class="section-head center reveal">
@@ -161,6 +179,7 @@
   </div>
 </section>
 
+<!-- SERVICIOS — 4 cards con las soluciones que ofrecemos (01 a 04) -->
 <section class="services" id="services">
   <div class="container">
     <div class="section-head center reveal">
@@ -219,6 +238,7 @@
   </div>
 </section>
 
+<!-- DEMO CHATBOT — simulación animada de una conversación de WhatsApp con IA -->
 <section class="chatbot-demo" id="chatbot-demo">
   <div class="container">
     <div class="section-head center reveal">
@@ -228,6 +248,7 @@
     </div>
     <div class="cd-layout">
 
+      <!-- Panel izquierdo: escenario "sin automatización" -->
       <div class="cd-before reveal-up">
         <div class="cd-before-head">
           <span class="cd-before-x">✕</span>
@@ -237,6 +258,7 @@
         <div class="cd-before-loss" data-i18n="cd.bloss">Para esa hora, ya compró en la agencia que le contestó primero.</div>
       </div>
 
+      <!-- Panel derecho: teléfono con chat animado + resultado final -->
       <div class="cd-after">
         <div class="cd-phone reveal-up">
           <div class="phone-frame">
@@ -247,11 +269,13 @@
                 <span class="wa-status" data-i18n="cd.online">vía Time Saver IA</span>
               </div>
             </div>
+            <!-- Mensajes del chat — aparecen secuencialmente por JS -->
             <div class="wa-chat">
               <div class="wa-msg wa-in">
                 <span data-i18n="cd.m1">¿Tienen lugar para el 15 de julio en el hotel Llao Llao?</span>
                 <span class="wa-time">15:32</span>
               </div>
+              <!-- Indicador de escritura — se muestra brevemente antes de la respuesta -->
               <div class="wa-typing" id="wa-typing">
                 <span></span><span></span><span></span>
               </div>
@@ -271,6 +295,7 @@
           </div>
         </div>
 
+        <!-- Tarjeta de resultado que aparece al finalizar la conversación -->
         <div class="cd-result" id="cd-result">
           <div class="cd-result-icon">✓</div>
           <div>
@@ -288,6 +313,7 @@
   </div>
 </section>
 
+<!-- PROCESO — 4 pasos que explican cómo trabajamos -->
 <section class="process" id="process">
   <div class="container">
     <div class="section-head center reveal">
@@ -303,6 +329,7 @@
   </div>
 </section>
 
+<!-- FAQ — preguntas frecuentes con acordeón nativo (<details>/<summary>) -->
 <section class="faq" id="faq">
   <div class="container">
     <div class="faq-layout">
@@ -322,12 +349,14 @@
   </div>
 </section>
 
+<!-- EQUIPO — presentación del equipo con bloque de pilares y tarjetas individuales -->
 <section class="team" id="team">
   <div class="container">
     <div class="section-head center reveal">
       <span class="section-tag" data-i18n="t.tag">The team</span>
       <h2 class="section-title" data-i18n="t.title">The people behind Time Saver</h2>
     </div>
+    <!-- Bloque "sobre nosotros": 3 pilares con ícono, título y descripción breve -->
     <div class="team-about reveal">
       <div class="team-about-item">
         <span class="team-about-icon"><i data-lucide="award"></i></span>
@@ -351,6 +380,7 @@
         </div>
       </div>
     </div>
+    <!-- Tarjetas individuales de cada integrante -->
     <div class="team-grid">
       <div class="team-card reveal-up">
         <img src="images/gonzalovolpegomez.png" alt="Gonzalo Martin Volpe Gómez" class="team-photo">
@@ -379,6 +409,7 @@
   </div>
 </section>
 
+<!-- CTA FINAL — llamado a la acción antes del footer -->
 <section class="final-cta">
   <div class="cta-orb"></div>
   <div class="container">
@@ -391,6 +422,7 @@
   </div>
 </section>
 
+<!-- FOOTER — logo, navegación, contacto y selector de idioma -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -423,6 +455,7 @@
   </div>
 </footer>
 
+<!-- Scripts: i18n primero (traducciones), luego lógica general, luego íconos Lucide -->
 <script src="js/i18n.js" defer></script>
 <script src="js/js.js" defer></script>
 <script>lucide.createIcons();</script>
