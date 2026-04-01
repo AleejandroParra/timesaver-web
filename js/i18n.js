@@ -1,7 +1,7 @@
 const T = {
   en: {
     'nav.services':'Services','nav.process':'Process','nav.team':'Team','nav.faq':'FAQ','nav.cta':'Free diagnosis →',
-    'hero.eyebrow':'Web Sites · AI Automation · Argentina',
+    'hero.eyebrow':'Web Sites · AI Automation · Development',
     'hero.title1':'Your business,','hero.title2':'should run itself',
     'hero.sub':'We design automated systems that eliminate repetitive tasks, connect your tools, and scale your operation without adding headcount.',
     'hero.cta1':'Get a free consultation','hero.cta2':'See how it works →',
@@ -46,14 +46,14 @@ const T = {
     'faq.q5':'Do automations scale with the business?','faq.a5':'Yes. We design flexible systems that grow with your company without rebuilding from scratch.',
     't.tag':'The team','t.title':'The people behind Time Saver',
     't.g.role':'Automation & Web Developer','t.g.bio':'Web developer specialized in AI automation. Builds the systems that make everything work: from the frontend to the automated flows that eliminate manual work.',
-    't.a.role':'Data Scientist','t.a.bio':'Data Scientist with experience at Walmart, Newsan and Banco Santander. Designs automations, system integrations and operational flows with n8n and APIs.',
+    't.a.role':'Data Scientist · Automation & Dev','t.a.bio':'Data Scientist with experience at Walmart, Newsan and Banco Santander. Designs automations, system integrations and operational flows with n8n and APIs.',
     'cta.tag':'Start today','cta.title':'Scale your operation this week',
     'cta.text':'The first step is free. Tell us how your operation works and we\'ll design your first automation architecture.','cta.btn':'Request free diagnosis',
     'ft.tag':'Web + AI automation for companies that want to grow without hiring more staff.','ft.nav':'Navigation','ft.contact':'Contact','ft.wa':'Chat on WhatsApp →'
   },
   es: {
     'nav.services':'Servicios','nav.process':'Proceso','nav.team':'Equipo','nav.faq':'FAQ','nav.cta':'Diagnóstico gratis →',
-    'hero.eyebrow':'Sitios Web · Automatización IA · Argentina',
+    'hero.eyebrow':'Sitios Web · Automatización IA · Desarrollo',
     'hero.title1':'Tu negocio,','hero.title2':'trabajando solo',
     'hero.sub':'Construimos tu sitio web y lo conectamos con sistemas automáticos que atienden clientes, mandan alertas y mueven tu operación — las 24 horas, sin que tengas que hacer nada.',
     'hero.cta1':'Consultá gratis por WhatsApp','hero.cta2':'Ver cómo funciona →',
@@ -98,14 +98,14 @@ const T = {
     'faq.q5':'¿Las automatizaciones escalan con el negocio?','faq.a5':'Sí. Diseñamos sistemas flexibles que crecen con tu empresa sin reconstruir desde cero.',
     't.tag':'El equipo','t.title':'Las personas detrás de Time Saver',
     't.g.role':'Automation & Web Developer','t.g.bio':'Desarrollador web especializado en automatización con IA. Construye los sistemas que hacen que todo funcione: desde el frontend hasta los flujos automáticos que eliminan el trabajo manual.',
-    't.a.role':'Data Scientist','t.a.bio':'Data Scientist con experiencia real en Walmart, Newsan y Banco Santander. Diseña e implementa automatizaciones de procesos, integraciones entre sistemas y flujos operativos con n8n y APIs.',
+    't.a.role':'Data Scientist · Automation & Dev','t.a.bio':'Data Scientist con experiencia real en Walmart, Newsan y Banco Santander. Diseña e implementa automatizaciones de procesos, integraciones entre sistemas y flujos operativos con n8n y APIs.',
     'cta.tag':'Empezá hoy','cta.title':'Escalá tu operación esta semana',
     'cta.text':'El primer paso es gratis. Contanos cómo funciona tu operación y diseñamos tu primera arquitectura de automatización.','cta.btn':'Solicitar diagnóstico gratuito',
     'ft.tag':'Web + automatización IA para empresas que quieren crecer sin contratar más personal.','ft.nav':'Navegación','ft.contact':'Contacto','ft.wa':'Hablar por WhatsApp →'
   },
   pt: {
     'nav.services':'Serviços','nav.process':'Processo','nav.team':'Equipe','nav.faq':'FAQ','nav.cta':'Diagnóstico grátis →',
-    'hero.eyebrow':'Sites Web · Automação IA · Argentina',
+    'hero.eyebrow':'Sites Web · Automação IA · Desenvolvimento',
     'hero.title1':'Seu negócio,','hero.title2':'trabalhando sozinho',
     'hero.sub':'Construímos seu site e o conectamos com sistemas automáticos que atendem clientes, enviam alertas e movem sua operação — 24 horas, sem que você precise fazer nada.',
     'hero.cta1':'Consulte grátis pelo WhatsApp','hero.cta2':'Ver como funciona →',
@@ -150,7 +150,7 @@ const T = {
     'faq.q5':'As automações escalam com o negócio?','faq.a5':'Sim. Desenvolvemos sistemas flexíveis que crescem com sua empresa sem reconstruir do zero.',
     't.tag':'A equipe','t.title':'As pessoas por trás da Time Saver',
     't.g.role':'Automation & Web Developer','t.g.bio':'Desenvolvedor web especializado em automação com IA. Constrói os sistemas que fazem tudo funcionar.',
-    't.a.role':'Cientista de Dados','t.a.bio':'Cientista de dados com experiência na Walmart, Newsan e Banco Santander. Projeta automações de processos e integrações com n8n e APIs.',
+    't.a.role':'Cientista de Dados · Automação & Dev','t.a.bio':'Cientista de dados com experiência na Walmart, Newsan e Banco Santander. Projeta automações de processos e integrações com n8n e APIs.',
     'cta.tag':'Comece hoje','cta.title':'Escale sua operação esta semana',
     'cta.text':'O primeiro passo é gratuito. Conte como funciona sua operação e projetamos sua primeira arquitetura de automação.','cta.btn':'Solicitar diagnóstico gratuito',
     'ft.tag':'Web + automação IA para empresas que querem crescer sem contratar mais pessoal.','ft.nav':'Navegação','ft.contact':'Contato','ft.wa':'Conversar pelo WhatsApp →'
