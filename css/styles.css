@@ -8,13 +8,13 @@ img{display:block;max-width:100%}
 /* VARIABLES */
 :root{
   --bg:#181410;
-  --bg-card:#201912;
-  --bg-el:#281f14;
+  --bg-card:#2d2318;
+  --bg-el:#362b1f;
   --accent:#f97316;
   --accent2:#facc15;
   --text:#fdf6ee;
-  --muted:#9e8e7e;
-  --border:rgba(255,255,255,0.1);
+  --muted:#9e9a96;
+  --border:rgba(255,255,255,0.14);
   --r:14px;
   --nav:60px;
   --max:1160px;
@@ -51,7 +51,7 @@ section>.container{position:relative;z-index:1}
 
 /* NAV */
 .nav{position:fixed;inset:0 0 auto 0;height:var(--nav);z-index:1000;border-bottom:1px solid transparent;transition:background 0.3s,border-color 0.3s}
-.nav.scrolled{background:rgba(6,4,1,0.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--border)}
+.nav.scrolled{background:rgba(18,14,10,0.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--border)}
 .nav-inner{max-width:var(--max);margin:0 auto;padding:0 20px;height:100%;display:flex;align-items:center;gap:24px}
 .nav-logo{font-family:'Sora',sans-serif;font-weight:700;font-size:1.05rem;flex-shrink:0}
 .nav-logo sup{font-size:0.55rem;color:var(--muted);vertical-align:super}
@@ -75,7 +75,7 @@ section>.container{position:relative;z-index:1}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* MOBILE MENU */
-.mobile-menu{display:flex;flex-direction:column;position:fixed;top:var(--nav);left:0;right:0;background:rgba(6,4,1,0.98);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:20px 20px 28px;border-bottom:1px solid var(--border);gap:4px;z-index:999;transform:translateY(-8px);opacity:0;pointer-events:none;transition:all 0.25s}
+.mobile-menu{display:flex;flex-direction:column;position:fixed;top:var(--nav);left:0;right:0;background:rgba(18,14,10,0.98);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:20px 20px 28px;border-bottom:1px solid var(--border);gap:4px;z-index:999;transform:translateY(-8px);opacity:0;pointer-events:none;transition:all 0.25s}
 .mobile-menu.open{transform:translateY(0);opacity:1;pointer-events:all}
 .mobile-link{font-size:1rem;font-weight:500;color:var(--muted);padding:13px 0;border-bottom:1px solid var(--border);transition:color 0.2s}
 .mobile-link:hover{color:var(--text)}
@@ -124,7 +124,8 @@ section>.container{position:relative;z-index:1}
 .hf-trigger{border-left:3px solid var(--accent)}
 .hf-ai{border-left:3px solid #10b981}
 .hf-out{border-left:3px solid #6366f1}
-.hf-icon{font-size:1rem;flex-shrink:0}
+.hf-icon{font-size:1rem;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.hf-icon svg{width:16px;height:16px;stroke:var(--muted);stroke-width:1.75}
 .hf-node-body{display:flex;flex-direction:column;gap:2px;min-width:0}
 .hf-ntype{font-size:0.62rem;font-weight:700;color:var(--muted);letter-spacing:0.4px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hf-nname{font-size:0.78rem;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -163,7 +164,8 @@ section>.container{position:relative;z-index:1}
 .benefit-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transform-origin:left;transition:transform 0.25s}
 .benefit-card:hover{border-color:rgba(249,115,22,0.3);transform:translateY(-3px)}
 .benefit-card:hover::before{transform:scaleX(1)}
-.card-icon{font-size:1.8rem;margin-bottom:16px}
+.card-icon{margin-bottom:16px;display:flex}
+.card-icon svg{width:28px;height:28px;stroke:var(--accent);stroke-width:1.5}
 .benefit-card h3{font-size:clamp(1rem,2vw,1.15rem);font-weight:600;margin-bottom:10px}
 .benefit-card p{font-size:0.88rem;color:var(--muted);line-height:1.7}
 
@@ -171,7 +173,8 @@ section>.container{position:relative;z-index:1}
 .service-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:clamp(24px,4vw,36px);position:relative;overflow:hidden;transition:border-color 0.2s,transform 0.2s}
 .service-card:hover{border-color:rgba(250,204,21,0.35);transform:translateY(-3px)}
 .svc-num{position:absolute;top:20px;right:24px;font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;color:rgba(255,255,255,0.03);line-height:1}
-.card-icon-lg{font-size:1.8rem;margin-bottom:16px}
+.card-icon-lg{margin-bottom:16px;display:flex}
+.card-icon-lg svg{width:28px;height:28px;stroke:var(--accent);stroke-width:1.5}
 .service-card h3{font-size:clamp(1rem,2vw,1.25rem);font-weight:700;margin-bottom:10px}
 .service-card>p{font-size:0.88rem;color:var(--muted);margin-bottom:20px;line-height:1.7}
 .check-list{display:flex;flex-direction:column;gap:8px}
