@@ -119,14 +119,14 @@ section>.container{position:relative;z-index:1}
 .hf-pulse-dot{width:5px;height:5px;border-radius:50%;background:#28c840;box-shadow:0 0 4px #28c840;animation:pulseDot 2s infinite;flex-shrink:0}
 
 .hf-canvas{padding:14px;display:flex;flex-direction:column;align-items:center;gap:0}
-.hf-node{width:100%;display:flex;align-items:center;gap:10px;background:var(--bg-el);border:1px solid var(--border);border-radius:10px;padding:9px 13px;transition:border-color 0.2s}
+.hf-node{width:100%;min-width:0;display:flex;align-items:center;gap:10px;background:var(--bg-el);border:1px solid var(--border);border-radius:10px;padding:9px 13px;transition:border-color 0.2s}
 .hf-node:hover{border-color:rgba(249,115,22,0.3)}
 .hf-trigger{border-left:3px solid var(--accent)}
 .hf-ai{border-left:3px solid #10b981}
 .hf-out{border-left:3px solid #6366f1}
 .hf-icon{font-size:1rem;flex-shrink:0}
 .hf-node-body{display:flex;flex-direction:column;gap:2px;min-width:0}
-.hf-ntype{font-size:0.62rem;font-weight:700;color:var(--muted);letter-spacing:0.4px;text-transform:uppercase}
+.hf-ntype{font-size:0.62rem;font-weight:700;color:var(--muted);letter-spacing:0.4px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hf-nname{font-size:0.78rem;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 .hf-conn{display:flex;flex-direction:column;align-items:center;padding:2px 0}
