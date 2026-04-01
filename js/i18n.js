@@ -47,6 +47,9 @@ const T = {
     't.tag':'The team','t.title':'The people behind Time Saver',
     't.g.role':'Automation & Web Developer','t.g.bio':'Web developer specialized in AI automation. Builds the systems that make everything work: from the frontend to the automated flows that eliminate manual work.',
     't.a.role':'Data Scientist · Automation & Dev','t.a.bio':'Data Scientist with experience at Walmart, Newsan and Banco Santander. Designs automations, system integrations and operational flows with n8n and APIs.',
+    't.ab1t':'Real expertise','t.ab1p':'Background in tech development, automation and ML — focused on measurable results.',
+    't.ab2t':'Business impact','t.ab2p':'We help companies streamline processes, scale operations, and leverage the potential of AI.',
+    't.ab3t':'Global mindset','t.ab3p':'As travelers, we work with companies worldwide and adapt every solution to their context.',
     'cta.tag':'Start today','cta.title':'Scale your operation this week',
     'cta.text':'The first step is free. Tell us how your operation works and we\'ll design your first automation architecture.','cta.btn':'Request free diagnosis',
     'ft.tag':'Web + AI automation for companies that want to grow without hiring more staff.','ft.nav':'Navigation','ft.contact':'Contact','ft.wa':'Chat on WhatsApp →'
@@ -99,6 +102,9 @@ const T = {
     't.tag':'El equipo','t.title':'Las personas detrás de Time Saver',
     't.g.role':'Automation & Web Developer','t.g.bio':'Desarrollador web especializado en automatización con IA. Construye los sistemas que hacen que todo funcione: desde el frontend hasta los flujos automáticos que eliminan el trabajo manual.',
     't.a.role':'Data Scientist · Automation & Dev','t.a.bio':'Data Scientist con experiencia real en Walmart, Newsan y Banco Santander. Diseña e implementa automatizaciones de procesos, integraciones entre sistemas y flujos operativos con n8n y APIs.',
+    't.ab1t':'Experiencia real','t.ab1p':'Desarrollo tecnológico, automatización y ML enfocado en resultados concretos.',
+    't.ab2t':'Impacto operativo','t.ab2p':'Ayudamos a empresas a optimizar procesos, escalar operaciones y aprovechar el potencial de la IA.',
+    't.ab3t':'Perspectiva global','t.ab3p':'Como viajeros, trabajamos con empresas de todo el mundo y adaptamos cada solución a su contexto.',
     'cta.tag':'Empezá hoy','cta.title':'Escalá tu operación esta semana',
     'cta.text':'El primer paso es gratis. Contanos cómo funciona tu operación y diseñamos tu primera arquitectura de automatización.','cta.btn':'Solicitar diagnóstico gratuito',
     'ft.tag':'Web + automatización IA para empresas que quieren crecer sin contratar más personal.','ft.nav':'Navegación','ft.contact':'Contacto','ft.wa':'Hablar por WhatsApp →'
@@ -151,6 +157,9 @@ const T = {
     't.tag':'A equipe','t.title':'As pessoas por trás da Time Saver',
     't.g.role':'Automation & Web Developer','t.g.bio':'Desenvolvedor web especializado em automação com IA. Constrói os sistemas que fazem tudo funcionar.',
     't.a.role':'Cientista de Dados · Automação & Dev','t.a.bio':'Cientista de dados com experiência na Walmart, Newsan e Banco Santander. Projeta automações de processos e integrações com n8n e APIs.',
+    't.ab1t':'Experiência real','t.ab1p':'Desenvolvimento tecnológico, automação e ML com foco em resultados concretos.',
+    't.ab2t':'Impacto operacional','t.ab2p':'Ajudamos empresas a otimizar processos, escalar operações e aproveitar o potencial da IA.',
+    't.ab3t':'Perspectiva global','t.ab3p':'Como viajantes, trabalhamos com empresas do mundo todo e adaptamos cada solução ao seu contexto.',
     'cta.tag':'Comece hoje','cta.title':'Escale sua operação esta semana',
     'cta.text':'O primeiro passo é gratuito. Conte como funciona sua operação e projetamos sua primeira arquitetura de automação.','cta.btn':'Solicitar diagnóstico gratuito',
     'ft.tag':'Web + automação IA para empresas que querem crescer sem contratar mais pessoal.','ft.nav':'Navegação','ft.contact':'Contato','ft.wa':'Conversar pelo WhatsApp →'
