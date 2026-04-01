@@ -70,7 +70,8 @@ document.querySelectorAll('[data-count]').forEach(el => cntObs.observe(el));
       setTimeout(() => { typing.style.display='flex'; }, 1100);
       setTimeout(() => { typing.style.display='none'; msgs[1].classList.add('visible'); }, 2300);
       setTimeout(() => msgs[2].classList.add('visible'), 3500);
-      setTimeout(() => result.classList.add('visible'), 4400);
+      setTimeout(() => msgs[3].classList.add('visible'), 4500);
+      setTimeout(() => result.classList.add('visible'), 5400);
     }
   }, {threshold:0.3});
   obs.observe(section);
