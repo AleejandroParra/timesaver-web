@@ -54,3 +54,24 @@ const cntObs = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.5 });
 document.querySelectorAll('[data-count]').forEach(el => cntObs.observe(el));
+
+// CHATBOT DEMO ANIMATION
+(function(){
+  const section = document.querySelector('.chatbot-demo');
+  if(!section) return;
+  let done = false;
+  const obs = new IntersectionObserver(entries => {
+    if(entries[0].isIntersecting && !done){
+      done = true; obs.disconnect();
+      const msgs = section.querySelectorAll('.wa-msg');
+      const typing = document.getElementById('wa-typing');
+      const result = document.getElementById('cd-result');
+      setTimeout(() => msgs[0].classList.add('visible'), 400);
+      setTimeout(() => { typing.style.display='flex'; }, 1100);
+      setTimeout(() => { typing.style.display='none'; msgs[1].classList.add('visible'); }, 2300);
+      setTimeout(() => msgs[2].classList.add('visible'), 3500);
+      setTimeout(() => result.classList.add('visible'), 4400);
+    }
+  }, {threshold:0.3});
+  obs.observe(section);
+})();
