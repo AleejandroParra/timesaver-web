@@ -29,6 +29,7 @@
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+      <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
       <li><a href="#process" class="nav-link" data-i18n="nav.process">Process</a></li>
       <li><a href="#team" class="nav-link" data-i18n="nav.team">Team</a></li>
       <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
@@ -52,6 +53,7 @@
 <!-- MENÚ MOBILE — se despliega al tocar el hamburguesa -->
 <div class="mobile-menu" id="mobile-menu">
   <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+  <a href="#portfolio" class="mobile-link" data-i18n="nav.portfolio">Portfolio</a>
   <a href="#process" class="mobile-link" data-i18n="nav.process">Process</a>
   <a href="#team" class="mobile-link" data-i18n="nav.team">Team</a>
   <a href="#faq" class="mobile-link" data-i18n="nav.faq">FAQ</a>
@@ -104,7 +106,7 @@
         <!-- Nodos del flujo: trigger → IA → dos salidas (WhatsApp + base de datos) -->
         <div class="hf-canvas">
           <div class="hf-node hf-trigger">
-            <span class="hf-icon"><i data-lucide="globe"></i></span>
+            <span class="hf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
             <div class="hf-node-body">
               <span class="hf-ntype" data-i18n="flow.t1">Tu sitio web</span>
               <span class="hf-nname" data-i18n="flow.n1name">Nuevo lead recibido</span>
@@ -116,7 +118,7 @@
             <div class="hf-conn-v"></div>
           </div>
           <div class="hf-node hf-ai">
-            <span class="hf-icon"><i data-lucide="zap"></i></span>
+            <span class="hf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span>
             <div class="hf-node-body">
               <span class="hf-ntype" data-i18n="flow.t2">Asistente IA</span>
               <span class="hf-nname" data-i18n="flow.n2name">Califica e interpreta</span>
@@ -129,14 +131,14 @@
           </div>
           <div class="hf-outputs">
             <div class="hf-node hf-out">
-              <span class="hf-icon"><i data-lucide="message-circle"></i></span>
+              <span class="hf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
               <div class="hf-node-body">
                 <span class="hf-ntype">WhatsApp</span>
                 <span class="hf-nname" data-i18n="flow.n3name">Alerta a ventas</span>
               </div>
             </div>
             <div class="hf-node hf-out">
-              <span class="hf-icon"><i data-lucide="database"></i></span>
+              <span class="hf-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg></span>
               <div class="hf-node-body">
                 <span class="hf-ntype" data-i18n="flow.t4">Tu base de datos</span>
                 <span class="hf-nname" data-i18n="flow.n4name">Registra contacto</span>
@@ -167,6 +169,24 @@
   </div>
 </div>
 
+<!-- DESARROLLO WEB — 3 tarjetas con los principales argumentos para elegirnos como desarrolladores web -->
+<section class="benefits" id="web-dev">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="wd.tag">Desarrollo web</span>
+      <h2 class="section-title" data-i18n="wd.title">¿Necesitás una web?<br>Es lo que más hacemos</h2>
+    </div>
+    <div class="grid-3">
+      <div class="benefit-card reveal-up"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div><h3 data-i18n="wd.c1t">Entrega rápida</h3><p data-i18n="wd.c1p">Tu sitio listo en 1 a 3 semanas, no en meses. Sin vueltas ni idas y vueltas eternas de feedback.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg></div><h3 data-i18n="wd.c2t">Diseño a medida, no plantillas</h3><p data-i18n="wd.c2p">Cada sitio se construye para tu marca y tu negocio. Nada de templates genéricos reciclados.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3 data-i18n="wd.c3t">Código limpio, 100% tuyo</h3><p data-i18n="wd.c3p">Sin builders que te atan a una plataforma. Te entregamos código propio que podés llevar donde quieras.</p></div>
+    </div>
+    <div class="section-cta reveal">
+      <a href="https://wa.me/351938852194" class="btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="wd.cta">Pedí tu presupuesto de web</a>
+    </div>
+  </div>
+</section>
+
 <!-- BENEFICIOS — 3 tarjetas con los principales argumentos para automatizar -->
 <section class="benefits" id="benefits">
   <div class="container">
@@ -175,9 +195,9 @@
       <h2 class="section-title" data-i18n="b.title">Every day without automation<br>is time and money lost</h2>
     </div>
     <div class="grid-3">
-      <div class="benefit-card reveal-up"><div class="card-icon"><i data-lucide="clock"></i></div><h3 data-i18n="b.c1t">Recover hours every day</h3><p data-i18n="b.c1p">Answering queries, loading orders, generating reports — all this runs on its own. Your team focuses on what matters.</p></div>
-      <div class="benefit-card reveal-up"><div class="card-icon"><i data-lucide="shield-check"></i></div><h3 data-i18n="b.c2t">Fewer errors, more order</h3><p data-i18n="b.c2p">Information flows between your systems without human intervention. No duplicated data, no forgetting.</p></div>
-      <div class="benefit-card reveal-up"><div class="card-icon"><i data-lucide="trending-up"></i></div><h3 data-i18n="b.c3t">More sales, less effort</h3><p data-i18n="b.c3p">Every lead gets classified, registered and followed up automatically. Convert more without growing fixed costs.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3 data-i18n="b.c1t">Recover hours every day</h3><p data-i18n="b.c1p">Answering queries, loading orders, generating reports — all this runs on its own. Your team focuses on what matters.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i18n="b.c2t">Fewer errors, more order</h3><p data-i18n="b.c2p">Information flows between your systems without human intervention. No duplicated data, no forgetting.</p></div>
+      <div class="benefit-card reveal-up"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><h3 data-i18n="b.c3t">More sales, less effort</h3><p data-i18n="b.c3p">Every lead gets classified, registered and followed up automatically. Convert more without growing fixed costs.</p></div>
     </div>
   </div>
 </section>
@@ -191,29 +211,7 @@
     </div>
     <div class="grid-2">
       <div class="service-card reveal-up">
-        <span class="svc-num">01</span><div class="card-icon-lg"><i data-lucide="workflow"></i></div>
-        <h3 data-i18n="sv.s1t">Process Automation</h3>
-        <p data-i18n="sv.s1d">We connect your tools and eliminate manual work using n8n and APIs.</p>
-        <ul class="check-list">
-          <li data-i18n="sv.s1l1">Flows running 24/7 without errors</li>
-          <li data-i18n="sv.s1l2">CRM, invoicing and spreadsheets integrated</li>
-          <li data-i18n="sv.s1l3">Reports that generate themselves</li>
-          <li data-i18n="sv.s1l4">Automatic team notifications</li>
-        </ul>
-      </div>
-      <div class="service-card reveal-up">
-        <span class="svc-num">02</span><div class="card-icon-lg"><i data-lucide="cpu"></i></div>
-        <h3 data-i18n="sv.s2t">AI Agents</h3>
-        <p data-i18n="sv.s2d">Agents with contextual memory that understand your business and operate autonomously.</p>
-        <ul class="check-list">
-          <li data-i18n="sv.s2l1">WhatsApp, web or internal systems</li>
-          <li data-i18n="sv.s2l2">Memory and context per customer</li>
-          <li data-i18n="sv.s2l3">Scales without additional cost</li>
-          <li data-i18n="sv.s2l4">Learns from every interaction</li>
-        </ul>
-      </div>
-      <div class="service-card reveal-up">
-        <span class="svc-num">03</span><div class="card-icon-lg"><i data-lucide="monitor"></i></div>
+        <span class="svc-num">01</span><div class="card-icon-lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></div>
         <h3 data-i18n="sv.s3t">Web Development</h3>
         <p data-i18n="sv.s3d">Custom websites integrated with your automations from day one.</p>
         <ul class="check-list">
@@ -224,7 +222,29 @@
         </ul>
       </div>
       <div class="service-card reveal-up">
-        <span class="svc-num">04</span><div class="card-icon-lg"><i data-lucide="bot"></i></div>
+        <span class="svc-num">02</span><div class="card-icon-lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg></div>
+        <h3 data-i18n="sv.s1t">Process Automation</h3>
+        <p data-i18n="sv.s1d">We connect your tools and eliminate manual work using n8n and APIs.</p>
+        <ul class="check-list">
+          <li data-i18n="sv.s1l1">Flows running 24/7 without errors</li>
+          <li data-i18n="sv.s1l2">CRM, invoicing and spreadsheets integrated</li>
+          <li data-i18n="sv.s1l3">Reports that generate themselves</li>
+          <li data-i18n="sv.s1l4">Automatic team notifications</li>
+        </ul>
+      </div>
+      <div class="service-card reveal-up">
+        <span class="svc-num">03</span><div class="card-icon-lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg></div>
+        <h3 data-i18n="sv.s2t">AI Agents</h3>
+        <p data-i18n="sv.s2d">Agents with contextual memory that understand your business and operate autonomously.</p>
+        <ul class="check-list">
+          <li data-i18n="sv.s2l1">WhatsApp, web or internal systems</li>
+          <li data-i18n="sv.s2l2">Memory and context per customer</li>
+          <li data-i18n="sv.s2l3">Scales without additional cost</li>
+          <li data-i18n="sv.s2l4">Learns from every interaction</li>
+        </ul>
+      </div>
+      <div class="service-card reveal-up">
+        <span class="svc-num">04</span><div class="card-icon-lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></div>
         <h3 data-i18n="sv.s4t">AI ChatBot</h3>
         <p data-i18n="sv.s4d">Bots trained with your data that attend and qualify without human intervention.</p>
         <ul class="check-list">
@@ -237,6 +257,47 @@
     </div>
     <div class="section-cta reveal">
       <a href="https://wa.me/351938852194" class="btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="sv.cta">Eliminate manual work today</a>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO — proyectos reales entregados, con link al sitio en vivo -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag" data-i18n="pf.tag">Portfolio</span>
+      <h2 class="section-title" data-i18n="pf.title">Sitios que ya están<br>en producción</h2>
+    </div>
+    <div class="portfolio-viewport reveal-up">
+    <div class="portfolio-track">
+      <a href="https://www.dorado-travel.com/buenosaires-y-la-pampa.html" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+        <div class="pf-shot"><img src="images/portfolio-dorado-travel.jpg" alt="Sitio web de Dorado Travel" loading="lazy"></div>
+        <div class="pf-info">
+          <span class="pf-sector" data-i18n="pf.p1sector">Turismo de lujo</span>
+          <h3 class="pf-name">Dorado Travel</h3>
+          <p class="pf-desc" data-i18n="pf.p1desc">Sitio institucional para agencia de viajes de lujo en Buenos Aires y La Pampa.</p>
+          <span class="pf-link" data-i18n="pf.visit">Ver sitio →</span>
+        </div>
+      </a>
+      <a href="https://escola-surf-chandleyvaz.timesaverautomation.com/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+        <div class="pf-shot"><img src="images/portfolio-chandley-vaz.jpg" alt="Sitio web de Chandley Vaz Escola de Surf" loading="lazy"></div>
+        <div class="pf-info">
+          <span class="pf-sector" data-i18n="pf.p2sector">Escuela de surf · Brasil</span>
+          <h3 class="pf-name">Chandley Vaz</h3>
+          <p class="pf-desc" data-i18n="pf.p2desc">Sitio + sistema de reservas para escuela de surf en Cabo Frio.</p>
+          <span class="pf-link" data-i18n="pf.visit">Ver sitio →</span>
+        </div>
+      </a>
+      <a href="https://escuela-mineras-surf.timesaverautomation.com/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+        <div class="pf-shot"><img src="images/portfolio-mineras-surf.jpg" alt="Sitio web de Mineras Surf School" loading="lazy"></div>
+        <div class="pf-info">
+          <span class="pf-sector" data-i18n="pf.p3sector">Escuela de surf · Argentina</span>
+          <h3 class="pf-name">Mineras Surf</h3>
+          <p class="pf-desc" data-i18n="pf.p3desc">Sitio + calendario de disponibilidad para escuela de surf en Mar del Plata.</p>
+          <span class="pf-link" data-i18n="pf.visit">Ver sitio →</span>
+        </div>
+      </a>
+    </div>
     </div>
   </div>
 </section>
@@ -362,21 +423,21 @@
     <!-- Bloque "sobre nosotros": 3 pilares con ícono, título y descripción breve -->
     <div class="team-about reveal">
       <div class="team-about-item">
-        <span class="team-about-icon"><i data-lucide="award"></i></span>
+        <span class="team-about-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>
         <div>
           <strong data-i18n="t.ab1t">Experiencia real</strong>
           <p data-i18n="t.ab1p">Desarrollo tecnológico, automatización y ML enfocado en resultados concretos.</p>
         </div>
       </div>
       <div class="team-about-item">
-        <span class="team-about-icon"><i data-lucide="target"></i></span>
+        <span class="team-about-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
         <div>
           <strong data-i18n="t.ab2t">Impacto operativo</strong>
           <p data-i18n="t.ab2p">Ayudamos a empresas a optimizar procesos, escalar operaciones y aprovechar el potencial de la IA.</p>
         </div>
       </div>
       <div class="team-about-item">
-        <span class="team-about-icon"><i data-lucide="globe"></i></span>
+        <span class="team-about-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
         <div>
           <strong data-i18n="t.ab3t">Perspectiva global</strong>
           <p data-i18n="t.ab3p">Como viajeros, trabajamos con empresas de todo el mundo y adaptamos cada solución a su contexto.</p>
@@ -436,6 +497,7 @@
       <div class="footer-col">
         <h6 data-i18n="ft.nav">Navigation</h6>
         <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
         <a href="#process" data-i18n="nav.process">Process</a>
         <a href="#team" data-i18n="nav.team">Team</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -458,10 +520,8 @@
   </div>
 </footer>
 
-<!-- Scripts: Lucide (íconos), i18n (traducciones), lógica general -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<!-- Scripts: i18n (traducciones), lógica general. Íconos ahora son SVG inline, sin dependencia externa -->
 <script src="js/i18n.js" defer></script>
 <script src="js/js.js" defer></script>
-<script>lucide.createIcons();</script>
 </body>
 </html>
